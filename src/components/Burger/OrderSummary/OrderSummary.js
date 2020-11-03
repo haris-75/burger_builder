@@ -14,13 +14,13 @@ const orderSummary = ( props ) => {
 
     return (
         <Aux>
-            <h3>BURGER khaye ga!</h3>
-            <p>Mujhe Anday wala Burger Khana Hai.:</p>
+            <h3>Your Order</h3>
+            <p>A delicious burger with the following ingredients:</p>
             <ul>
                 {ingredientSummary}
             </ul>
-            <p>Paisy hai ya nahe?</p>
-            <p><strong>Itne Paisay Banay : {props.price} Rupees</strong></p>
+            <p><strong>Total Price: {props.price.toFixed(2)}</strong></p>
+            <p>Continue to Checkout?</p>
             <Button btnType="Danger" clicked={props.purchaseCancelled}>CANCEL</Button>
             <Button btnType="Success" clicked={props.purchaseContinued}>CONTINUE</Button>
         </Aux>
