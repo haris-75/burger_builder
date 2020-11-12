@@ -6,8 +6,10 @@
     cursor: pointer;
     font: inherit;
     padding: 10px;
-    margin: 10px;
     font-weight: bold;
+    margin: auto; 
+    margin-left: 10px;  
+    border-radius: 15px;
 }
 
 .Button:first-of-type {
@@ -15,10 +17,24 @@
     padding-left: 0;
 }
 
+.Button:disabled{
+    color: #ccc;
+    cursor: not-allowed;
+}
+
 .Success {
     color: #5C9210;
+    transition-duration: 0.4s;
 }
+/* .Success:hover {
+    background-color: #944317;
+} */
 
 .Danger {
     color: #944317;
+    transition-duration: 0.4s;
 }
+/* .Danger:hover {
+    background-color: #5C9210;
+} */
+

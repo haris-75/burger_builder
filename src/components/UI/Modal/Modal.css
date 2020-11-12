@@ -19,9 +19,9 @@
     }
 }
 
-@media (min-width: 350px) {
+@media (max-width: 400px) {
     .Modal {
-        width: 750px;
+        width: 600px;
         left: calc(50% - 150px);
     }
 }
